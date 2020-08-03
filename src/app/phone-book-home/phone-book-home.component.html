@@ -1,0 +1,54 @@
+
+<br><br><h1><b>PHONE BOOK APPLICATION</b></h1>
+<h2> Contacts </h2>
+
+
+<form id="addf" [formGroup]="contactAdd">
+<button id="addb" (click)="displayContact()" class="btn btn-primary btn-lg">+Add Contact</button>
+
+<h4><Label >Contact First Name</Label><br></h4>
+<input  type="text" width="100px" formControlName="contactFirstName" ><br>
+<p></p>
+<h4><Label >Contact  SurName</Label><br></h4>
+<input  type="text" width="100px" formControlName="contactSurName" ><br>
+<p></p>
+<h4><Label> Contact Number</Label><br></h4>
+<input type="number" formControlName="contactNumber"><br>
+<p></p>
+<button (click)="updateContactFromUser()" class="btn btn-success btn-lg">Update Contact</button>
+<button type="reset" class="btn btn-secondary btn-lg">Refresh</button>
+</form>
+
+
+<section id="sec">
+  <form id="searchform" [formGroup]="contactSearch">
+  <input type="text"  formControlName="search">
+
+  <button class="btn btn-primary btn-lg" (click)="searchContact()">Find</button>
+  </form>
+  <div id="up" *ngFor ="let i of FindContact" class="btn btn-danger">
+   
+   Contact Name:{{i.firstname}} {{i.surname}}<br>
+   Contact Number:{{i.number}}<br>
+  </div>
+
+<button (click)="sortContactNumber()" class="btn btn-success btn-lg">Sort By Number</button>
+<button (click)="sortContactFirstName()" class="btn btn-success btn-lg">Sort By Number</button>
+<button (click)="sortContactSurName()" class="btn btn-success btn-lg">Sort By Number</button>
+
+<div id="con" *ngFor ="let i of contacts" class="alert alert-warning">
+   
+   Contact Name:{{i.firstname}} {{i.surname}}<br>
+   Contact Number:{{i.number}}<br>
+   <button id="del" class="btn btn-danger btn-lg" (click)="deleteContactByUser(i.firstname,i.surname,i.number)">Delete</button>
+   
+  
+
+   
+</div>
+</section>
+
+
+
+
+

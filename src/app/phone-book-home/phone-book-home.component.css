@@ -1,0 +1,64 @@
+div{
+    width:400px;
+    border-color: antiquewhite;
+    border-style: solid;
+    left:400px;
+position: relative;
+}
+
+h1{
+    left: 400px;
+    position: relative;
+}
+h2{
+    left:400px;
+    position: relative;
+}
+
+
+#con{
+    background-color: beige;
+    border-width: 1px;
+    width: 300px;
+    top:-270px;
+}
+#up{
+    background-color:gainsboro;
+    border-width: 1px;
+    width: 300px;
+    top:-250px;
+    position: relative;
+    left:500px;
+}
+#addb{
+    top:-27px;
+    left:176px;
+    position: relative;
+}
+
+#del{
+    
+    left: 200px;
+    position: relative;
+}
+
+#addf{
+    margin-top: 50px;
+    padding-top: 28px;
+    background-color:antiquewhite;
+    left:50px;
+    position: relative;
+    width:280px;
+}
+
+#searchform{
+    top: -290px;
+    left:400px;
+    width:400px;
+    position: relative;
+}
+
+#sec{
+    top:50px;
+    position: relative;
+}
